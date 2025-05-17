@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edu-animation-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edu-animation
+  template:
+    metadata:
+      labels:
+        app: edu-animation
+    spec:
+      containers:
+        - name: edu-animation
+          image: vasanth4747/education-animation:v1
+          ports:
+            - containerPort: 80
