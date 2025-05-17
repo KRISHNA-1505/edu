@@ -5,7 +5,7 @@ pipeline {
         IMAGE_NAME = "krishna728/youtube-login-krish-animation"
         TAG = "v1"
         DOCKER_USERNAME = "krishna728"
-        DOCKER_PASSWORD = "rks1505$$$"  // Not secure - avoid using in production
+        DOCKER_PASSWORD = "rks1505\$\$\$"  // Not secure - avoid using in production
         KUBECONFIG = "/home/vasanth47/.kube/config"  // Set the correct kubeconfig path
     }
 
