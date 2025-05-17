@@ -2,17 +2,17 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "vasanth4747/youtube-login-krish-animation"
+        IMAGE_NAME = "krishna728/youtube-login-krish-animation"
         TAG = "v1"
-        DOCKER_USERNAME = "vasanth4747"
-        DOCKER_PASSWORD = "vasanth@47"  // Not secure - avoid using in production
+        DOCKER_USERNAME = "krishna728"
+        DOCKER_PASSWORD = "rks1505$$$"  // Not secure - avoid using in production
         KUBECONFIG = "/home/vasanth47/.kube/config"  // Set the correct kubeconfig path
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/vasanthvk47/education-anie.git'
+                git branch: 'main', url: 'https://github.com/KRISHNA-1505/edu.git'
             }
         }
 
